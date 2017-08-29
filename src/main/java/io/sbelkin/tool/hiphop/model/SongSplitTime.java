@@ -3,19 +3,20 @@ package io.sbelkin.tool.hiphop.model;
 import java.util.Date;
 
 /**
- * Created by sabel on 6/29/2017.
+ * Created by sbelkin on 6/29/2017.
  */
 public class SongSplitTime {
 
     private long id;
     private Song song;
-    private String description;
+    private String move;
     private Integer startTime;
     private Integer playTime;
     private Date date;
 
-    public SongSplitTime(Song song, String description, Integer startTime, Integer playTime, Date date) {
+    public SongSplitTime(Song song, String move, Integer startTime, Integer playTime, Date date) {
         this.song = song;
+        this.move = move;
         this.startTime = startTime;
         this.playTime = playTime;
         this.date = date;
@@ -37,12 +38,12 @@ public class SongSplitTime {
         this.song = song;
     }
 
-    public String getDescription() {
-        return description;
+    public String getMove() {
+        return move;
     }
 
-    public void setDescription(String description) {
-        this.description = description;
+    public void setMove(String move) {
+        this.move = move;
     }
 
     public Integer getStartTime() {
